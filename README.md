@@ -2,13 +2,18 @@
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## LIVE URL
-
-YET to be UPDATED!
-
 ## Description
 
 This is the code files for the corresponsing command-line application that functions as a Professional README File Generator. Once run properly, the user will be presented with questions regarding the title of their README file, the LIVE URL, etc. Once answered, the user's input is then used to create the corresponding professional README file! Checkout NEWFILE.md and NEWFILE2.md for examples!
+
+## Table of Contents
+
+- [Demo Video](#demo-video)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Credits](#credits)
 
 ## Demo Video
 
@@ -33,7 +38,9 @@ Link: https://www.youtube.com/watch?v=fL_J5m0gWHw
 
 To generate your own professional README, "git clone" the repo down to your local so you have the Node project on your local. Run "npm install" in order to install the npm package dependencies as specified in the package.json: inquirer- for question propmts for inputs from the command line in terminal.
 
-The application will start by running "node index.js" in the command line. Please make sure you are in the right directory when doing so! After answering the questions, the README file will be swiftly generated and will be ready for you at the root of the repo.!
+## Usage
+
+To use the application, run "node index.js" in the command line. Please make sure you are in the right directory when doing so! After answering the questions, the README file will be swiftly generated and will be ready for you at the root of the repo!
 
 ## License
 
