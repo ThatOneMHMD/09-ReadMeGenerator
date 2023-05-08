@@ -1,125 +1,50 @@
-# 09 Node.js Challenge: Professional README Generator
+# Professional README Generator
 
-## Your Task
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-![App-Screenshot](./images/vector-landscape-illustration.png)
+## LIVE URL
 
-When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
+YET to be UPDATED!
 
-You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
+## Description
 
-Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). Review the [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) as a reminder of everything that a high-quality, professional README should contain. 
+This is the code files for the corresponsing command-line application that functions as a Professional README File Generator. Once run properly, the user will be presented with questions regarding the title of their README file, the LIVE URL, etc. Once answered, the user's input is then used to create the corresponding professional README file! Checkout NEWFILE.md and NEWFILE2.md for examples!
 
-The application will be invoked by using the following command:
+## Demo Video
 
-```bash
-node index.js
-```
+This video is approximately 5 mins long. Though it, two sample README files are created. The first one includes a screenshot section, a LIVE URL, etc., while the second does not. This is done to show that the file is generated professionally with or without those sections. Please note that his video has no audio.
 
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer. You’ll need to submit a link to the video _and_ add it to the README of your project.
+Link: https://www.youtube.com/watch?v=fL_J5m0gWHw
 
+## Features
 
-## User Story
+- When the user is prompted for information about their application repository, then a high-quality, professional README.md is generated with the title of their project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+- When they enter their project title, then this is displayed as the title of the README
+- When the user enters a description, installation instructions, usage information, contribution guidelines, and test instructions, then this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+- When they choose a license for their application from a list of options, then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under. And if they choose "none", then no license is added!
+- When they choose to add a screenshot of their app project, they enter the image's location into the command line, then they are presented with the corresponding screenshot section. If they enter "none", then no screenshot is added
+- When they choose to add a LIVE URL, then they are presented with the corresponding section. If they enter "none", then no URL section is added!
+- When they enter their GitHub username, then this is added to the section of the README entitled Questions, with a link to their GitHub profile
+- When they enter their email address, then this is added to the section of the README entitled Questions, with instructions on how to reach them with additional questions
+- When they are prompted to enter a name for the README file and they enter whichever name desired, then the file is created with that name 
+- When they click on the links in the Table of Contents, then they are taken to the corresponding section of the README
 
-```md
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
-```
+## Installation
 
-## Acceptance Criteria
+To generate your own professional README, "git clone" the repo down to your local so you have the Node project on your local. Run "npm install" in order to install the npm package dependencies as specified in the package.json: inquirer- for question propmts for inputs from the command line in terminal.
 
-```md
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
-```
+The application will start by running "node index.js" in the command line. Please make sure you are in the right directory when doing so! After answering the questions, the README file will be swiftly generated and will be ready for you at the root of the repo.!
 
-## Getting Started
+## License
 
-Here are some guidelines to help you get started:
+MIT
 
-* Create a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` directory isn't tracked or uploaded to GitHub. Be sure to create your `.gitignore` file before installing any npm dependencies.
+## Credits
 
-* Make sure that your repo includes a `package.json` with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
+ThatOneMHMD - The creator of this website!
+(Link: https://github.com/ThatOneMHMD)
 
-* Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
+gachoi06 - The provider of the starter code!
+(Link to their GitHub profile: https://github.com/gachoi06)
 
-* Refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
-
-* Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Deliverables: 20%
-
-* A sample README generated using the application must be submitted.
-
-* Your GitHub repository containing your application code.
-
-### Walkthrough Video: 27%
-
-* A walkthrough video that demonstrates the functionality of the README generator must be submitted, and a link to the video should be included in your README file.
-
-* The walkthrough video must demonstrate how a user would invoke the application from the command line.
-
-* The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-
-* The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-	* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains a high-quality README with description and a link to walkthrough video.
-
-
-## Review
-
-You are required to submit the following for review:
-
-* A walkthrough video demonstrating the functionality of the application.
-
-* A sample README.md file for a project repository generated using your application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+(Link to their repo: https://github.com/coding-boot-camp/potential-enigma.git)
